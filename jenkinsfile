@@ -4,16 +4,16 @@ pipeline {
      
       stage('build'){
        steps {
-        sh "mvn clean"
-        sh "mvn install"
-        sh "mvn package"
-        sleep 10
+         sh "mvn clean"
+         sh "mvn install"
+         sh "mvn package"
+         sleep 10
          echo "Hello World"
        }
     }
      stage('deploy'){
        steps {
-         sleep 10
+          sleep 10
           echo "Hello World"
        } 
     }
